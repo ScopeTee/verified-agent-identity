@@ -1,16 +1,16 @@
-name: Fuad
+name: Verify Human Identity
 
 on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'lokie'
+        description: 'timmyak20'
         required: true
-        default: 'lokie'
+        default: 'timmyak20'
       agent_description:
-        description: 'lokie'
+        description: 'timmyak20'
         required: true
-        default: 'lokie AI Agent'
+        default: 'timmyak20 AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "lokie", "description": "lokie AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "timmyak20", "description": "timmyak20 AI Agent"}'
